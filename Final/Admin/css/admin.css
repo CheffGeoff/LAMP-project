@@ -1,0 +1,97 @@
+html{
+  background-color: #76787a;
+  background-image: linear-gradient(to bottom right, #485563, #29323c);
+  font-size: 16px;
+}
+
+table{
+  margin: 3rem 15rem 3rem 5rem;
+  padding: 1rem;
+  color: black;
+ 
+}
+
+th{
+  padding: 1rem;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+
+.blogTitle a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.blogTitle a:hover{
+  background-color: red;
+  border-radius: 5px;
+}
+
+tbody{
+  margin: 1rem;
+  padding: 1rem;
+  padding-right: 50px;
+}
+
+.blogTitle{
+  text-align: left;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  
+  width: 15%;
+  margin-top: 5rem;
+  border: 2px solid black;
+}
+.blogContent{
+  margin-top: 5rem;
+  text-align: left;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border: 2px solid black;
+}
+
+
+
+
+.menu {
+      display: block;
+      overflow: hidden;
+      background-color: black;
+      opacity: 1;
+      position:fixed;
+      top:0;
+      width:100%;
+  }
+
+.menu li {
+      float: left;
+  }
+
+.menu a {
+      display: block;
+      color: whitesmoke;
+      text-align: center;
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+      text-decoration: none;
+      opacity: 1;
+      font-size: 2rem;
+  }
+
+.menu a:hover{
+  background-color: #595959;
+  
+}
+
+
+.message{
+  color: currentcolor;
+  margin-left: 20rem;
+  margin-top: 10rem;
+  margin-bottom: 19.25rem;
+  font-size:1.5rem;
+}
+
+
+

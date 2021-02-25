@@ -1,0 +1,176 @@
+/* Shared */
+.wallpaper, 
+.picture-shadow, 
+.picture-image, 
+.name, 
+.job, 
+.hr, 
+.description, 
+.contact, 
+.social,
+.menu,
+input[type=text],
+textarea li{
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5,0,1);
+  animation-fill-mode: both;
+}
+
+.contact {
+  animation-delay: 600ms;
+  animation-name: bounceIn;
+}
+
+.picture-shadow, 
+.picture-image{
+  animation-duration: 750ms;
+  animation-timing-function: cubic-bezier(0, 0.5,0.25,1.25);
+}
+
+.wallpaper, 
+.picture-shadow,
+.picture-image{
+  opacity: 0;
+}
+
+.wallpaper {
+ animation-timing-function: ease-out;
+}
+
+.wallpaper .is-loaded{
+  animation-delay: 1s;
+  animation-name: zoomOut;
+}
+
+.picture-shadow{
+  animation-delay: 500ms;
+  
+}
+
+.picture.is-loaded .picture-shadow{
+  animation-name: picShadow;
+}
+
+.picture.is-loaded .picture-image{
+  animation-name: picImage;
+}
+
+.name{
+  animation-delay: 100ms;
+  animation-name: slideDown;
+}
+
+.job{
+  animation-delay: 200ms;
+  animation-name: slideDown;
+}
+
+.hr{
+  animation-delay: 300ms;
+  animation-name: fillUp;
+}
+
+.description{
+  animation-delay: 400ms;
+  animation-name: slideUp;
+}
+
+.social li{
+  animation-duration: 500ms;
+  animation-name: slideUp;
+  animation-timing-function: cubic-bezier(0.5,0,0.5,1.5);
+}
+
+.menu{
+  animation-duration: 250msms;
+  animation-name: slideUp;
+}
+textarea{
+  animation-duration: 1000ms;
+  animation-name: slideUp;
+}
+input[type=text] {
+  animation-duration: 675ms;
+  animation-name: slideDown;
+}
+
+
+@keyframes bounceIn {
+  from{
+    opacity: 0;
+    transform: scale(0.5);
+    
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes fillUp {
+  from{
+    transform: scalex(0);
+  }
+  to{
+    transform: scalex(1);
+  }
+}
+
+@keyframes picImage {
+  from{
+    opacity: 0;
+    transform: scale(1.2) translate(-1rem);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+}
+
+@keyframes picShadow {
+  from{
+    opacity: 0;
+    transform: scale(1.2) translateY(4rem);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from{
+    opacity: 0;
+    transform: translatey(1rem);
+  }
+  to{
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+
+@keyframes zoomOut {
+  from{
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to{
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+
+
